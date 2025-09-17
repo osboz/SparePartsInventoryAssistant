@@ -31,18 +31,20 @@ restart:
     Input[strcspn(Input, "\n")] = 0;
     char *input = Input;
 
+
+    
     // evaluate input
     if (strcmp(input, "PLC module") == 0 && PLC_module > 0)
-        printf("Yes, we have %d PLC modules in stock.\n", PLC_module);
+        printf("I've got PLC module here for you\n");
     else if (strcmp(input, "hydraulic pump") == 0 && hydraulic_pump > 0)
-        printf("Yes, we have %d hydraulic pumps in stock.\n", hydraulic_pump);
+        printf("I've got hydraulic pumps here for you\n");
     else if (strcmp(input, "servo motor") == 0 && servo_motor > 0)
-        printf("Yes, we have %d servo motors in stock.\n", servo_motor);
+        printf("I've got servo motor here for you\n");
     else if (strcmp(input, "Is there anything in stock at all?") == 0 || strcmp(input, "Do you actually have any parts?") == 0)
         whatOfEach();
     else
     {
-        printf("Sorry, we don't have %s in stock.\n", input);
+        printf("I am afraid we don't have any %s in the inventory.\n", input);
         goto restart;
     }
 }

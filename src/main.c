@@ -21,9 +21,6 @@ void evaluateInput()
 restart:
 
     // ask and get input
-    // easy version
-    // printf("\nWhich part do you need? (hydraulic pump, PLC module, servo motor)");
-    // wanted by problem statement
     printf("Which part do you need?\n");
     fgets(Input, sizeof(Input), stdin);
 
@@ -31,9 +28,7 @@ restart:
     Input[strcspn(Input, "\n")] = 0;
     char *input = Input;
 
-
-    
-    // evaluate input
+    // evaluate input and print appropriate response
     if (strcmp(input, "PLC module") == 0 && PLC_module > 0)
         printf("I've got PLC module here for you\n");
     else if (strcmp(input, "hydraulic pump") == 0 && hydraulic_pump > 0)

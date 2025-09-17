@@ -37,13 +37,13 @@ Then the assistant must reply with the number of parts and their names, one on e
 The program exits, only after the assistant affirms that a part is available.
 Sample interaction
 
-Hej. Welcome to the spare parts inventory!
-Which part do you need? gripper
-I am afraid we don't have any gripper in the inventory 😔
-Which part do you need? plc module
-I am afraid we don't have any plc module in the inventory 😔
-Which part do you need? PLC module
-I've got PLC module here for you 😊
-(program exits)
+- Hej. Welcome to the spare parts inventory!
+- Which part do you need? gripper
+- I am afraid we don't have any gripper in the inventory 😔
+- Which part do you need? plc module
+- I am afraid we don't have any plc module in the inventory 😔
+- Which part do you need? PLC module
+- I've got PLC module here for you 😊
+- (program exits)
 
 

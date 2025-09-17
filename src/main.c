@@ -14,7 +14,7 @@ void whatOfEach()
     printf("%2d: %s\n", PLC_module, "PLC module");
     printf("%2d: %s\n", servo_motor, "servo motor");
 }
-// function 
+// function
 void evaluateInput()
 {
     // restart point
@@ -42,7 +42,7 @@ restart:
         whatOfEach();
     else
     {
-        printf("Sorry, we don't have that part in stock.\n");
+        printf("Sorry, we don't have %s in stock.\n", input);
         goto restart;
     }
 }
@@ -53,7 +53,6 @@ int main(void)
     hydraulic_pump = rand() % 100;
     PLC_module = rand() % 100;
     servo_motor = rand() % 100;
-
 
     printf("Hej. Welcome to the spare parts inventory!\n");
 

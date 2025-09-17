@@ -1,10 +1,11 @@
- space parts opgave 
+# spare parts opgave 
+
 Draw a flowchart for this problem.
 > [Flowchart](flowchartSpaceParts.png)
 
-da code : [code](main.c)
+> da code : [code](.src/main.c)
 
-
+---
 
 # problem 
 You will program a chat assistant that gives information about the availability of industrial spare parts in the inventory. The assistant repeatedly asks the user which part they need and the user replies whether they would like to have or not.

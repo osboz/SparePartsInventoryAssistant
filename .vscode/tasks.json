@@ -5,7 +5,7 @@
             "type": "shell",
             "command": "clang",
             "args": [
-                "./src/main.c",
+                "./.src/main.c",
                 "-o",
                 "main.exe"
             ]

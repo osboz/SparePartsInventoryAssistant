@@ -21,7 +21,10 @@ void evaluateInput()
 restart:
 
     // ask and get input
-    printf("\nWhich part do you need? (hydraulic pump, PLC module, servo motor)");
+    // easy version
+    // printf("\nWhich part do you need? (hydraulic pump, PLC module, servo motor)");
+    // wanted by problem statement
+    printf("Which part do you need?\n");
     fgets(Input, sizeof(Input), stdin);
 
     // Remove newline character
